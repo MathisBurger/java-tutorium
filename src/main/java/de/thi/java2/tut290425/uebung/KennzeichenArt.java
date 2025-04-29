@@ -1,4 +1,4 @@
-package de.thi.java2.tut290425;
+package de.thi.java2.tut290425.uebung;
 
 public enum KennzeichenArt {
     Militaer,

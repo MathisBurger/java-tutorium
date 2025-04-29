@@ -2,6 +2,8 @@
 
 Dies ist eine Übung die sich auf viele verschiedene Faktoren der Objektorientierung fokussiert, um das allgemeine Verständnis für diese Themen zu stärken.
 
+[Relevante Dateien](./)
+
 ### Ausgangssituation
 
 Sie arbeiten in der IT der Zulassungsstelle des Freistaates Bayern. Ihr Abteilungsleiter hat Sie beauftragt das zentrale IT-System für den Zulassungsprozess zu entwickeln.
