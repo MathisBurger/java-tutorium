@@ -70,7 +70,7 @@ Ist eine solche Implementierung überhaupt möglich? Was sagen die dem Entwickle
 
 **Antwortmöglichkeiten:**
 
-- Nein, das geht nicht. `Kennzeichenart` ist ein Enum, da kann ich keine Funktionen drauf aufrufen
+- Nein, das geht nicht. `Kennzeichenart` ist ein Enum, da kann ich keine Funktionen drauf aufrufen / implementieren
 - Das Leben ist kein Wunschkonzert, bau dir den Kram doch selbst!
 - Ja, das ist möglich.
 
