@@ -1,4 +1,4 @@
-package de.thi.java2.tut290425.abc;
+package de.thi.java2.tut290425.inhalte;
 
 import de.thi.java2.tut290425.uebung.Trecker;
 
