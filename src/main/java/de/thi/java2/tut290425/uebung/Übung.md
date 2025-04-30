@@ -8,7 +8,7 @@ Dies ist eine Übung die sich auf viele verschiedene Faktoren der Objektorientie
 
 Sie arbeiten in der IT der Zulassungsstelle des Freistaates Bayern. Ihr Abteilungsleiter hat Sie beauftragt das zentrale IT-System für den Zulassungsprozess zu entwickeln.
 
-Hierfür sind bisher fünf leere Klassen gegeben. Die abstrakte Oberklasse `Fahrzeug` und die vier weiteren Klassen, die von dieser erben.
+Hierfür sind bisher vier leere Klassen gegeben. Die abstrakte Oberklasse `Fahrzeug` und die drei weiteren Klassen, die von dieser erben.
 
 
 ### Aufgabe 01
@@ -20,8 +20,6 @@ Alle Fahrzeuge haben folgende Attribute: `leistung (int)`, `baujahr (int)`, `gew
 Ein Auto hat die weiteren Attribute `kamera (boolean)`, `anzahlSitze (byte)`.
 
 Ein Bagger hat die weiteren Attribute `armLaenge (int)`, `schaufelVolumen (int)`
-
-Ein Panzer hat die weiteren Attribute `dickePanzerung (int)`, `hauptwaffeKaliber (int)`
 
 Ein Trecker hat die weiteren Attribute `hydraulikDruck (int)`, `isoBus (boolean)`, `gps (boolean)`
 
@@ -37,7 +35,6 @@ Sie bitte eine `RuntimeException`.
 **Zulässige Kraftstoffe:**
 - `Auto` => `Diesel`, `Benzin`
 - `Bagger` => `Diesel`
-- `Panzer` => `Oel`
 - `Trecker` => `Diesel`
 
 ### Aufgabe 03
@@ -48,7 +45,6 @@ anhand der Fahrzeugart zu ermitteln, welche Art von Kennzeichen das Fahrzeug erh
 Auch wenn es oft Abweichungen gibt, sind die Standardwerte wiefolgt:
 
 - `Trecker` => `Landwirtschaft`,
-- `Panzer` => `Militaer`
 - Rest => `Normal`
 
 Nehmen sie die Klasse `ZulassungsDienst` und implementieren die vorgegebene Funktion so, dass abhängig von dem übergebenen Fortbewegungsmittel die jeweilige Kennzeichenart zurückgegeben wird.
