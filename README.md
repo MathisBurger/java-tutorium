@@ -7,8 +7,8 @@ Hier findet ihr alle Übungen und Dateien aus dem Tutorium.
 **Übungen:**
 
 - [Übung 01](src/main/java/de/thi/java2/tut290425/uebung/Übung.md)
-  **Dateien:**
 
+**Dateien:**
 - [Dateien](src/main/java/de/thi/java2/tut290425/inhalte)
 
 ### 24.04.2025
