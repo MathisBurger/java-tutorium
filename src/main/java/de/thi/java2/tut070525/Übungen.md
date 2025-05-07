@@ -91,3 +91,146 @@ for (TextInterface text : texte) {
     System.out.println("Abstract: " + text.getZusammenfassung());
 }
 ```
+
+# Übung 04
+
+### 4.1 
+
+```java
+class Demo<T, E> {
+    
+    public T getSomething(E params) {
+        return params.convertSomehow();
+    }
+}
+```
+Wofür steht hier das `T` und das `E`?
+
+### 4.2
+
+Gegeben sind folgende Klassen:
+
+```java
+class GeometricObjekt {
+}
+
+class Quadrat extends GeometricObject {
+}
+
+class Kreis extends GeometricObject {}
+```
+
+Welcher Code funktioniert und welcher nicht?
+
+```java
+import java.util.ArrayList;
+
+List list = new ArrayList();
+list.add(new Quadrat());
+list.add(new Kreis());
+
+for (Kreis kreis : list) {
+    System.out.println(kreis.toString())
+}
+```
+
+```java
+import java.util.ArrayList;
+
+List<Object> list = new ArrayList<Object>();
+list.add(new Quadrat());
+list.add(new Kreis());
+
+for (Object obj : list) {
+    System.out.println(obj.toString());
+}
+```
+
+```java
+import java.util.ArrayList;
+
+List<Kreis> list = new ArrayList<Kreis>();
+list.add(new Quadrat());
+list.add(new Kreis());
+
+for (Object obj : list) {
+    System.out.println(obj.toString());
+}
+```
+
+```java
+import java.util.ArrayList;
+
+List<GeometricObject> list = new ArrayList<GeometricObject>();
+list.add(new Quadrat());
+list.add(new Kreis());
+
+for(Object obj :list){
+    System.out.println(obj.toString());
+}
+```
+
+### 4.3
+
+Was ist das Ergebnis dieses Codes?
+
+```java
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+Object obj1 = new Object();
+Object obj2 = new Object();
+
+List<Object> list = new ArrayList<Object>();
+list.add(obj1);
+list.add(obj1);
+list.add(obj2);
+Set<Object> set = new HashSet<Object>();
+set.add(obj1);
+set.add(obj1);
+set.add(obj2);
+
+System.out.println(list.size() == set.size())
+```
+
+### 4.4
+
+Grundlegende Fragen zu Collections:
+
+- Alle Collections können mit Generics "verfeinert" werden. Wahr oder Falsch?
+- Was ist der Unterschied zwischen einer List und einem Set?
+- Was ist der Unterschied zwischen einer Map und einer List?
+
+## Übung 05
+
+### 5.1
+
+Ihr könnt jetzt schon eure Noten sortieren. Nun könnt ihr euer Leaderboard final bauen.
+
+Erstellt eine Klasse `Leaderboard.java`. Die Klasse hat **keinen** Default-Konstruktor und einen Konstruktur, der eine `List<Notenblatt>` nimmt und sie sortiert in ein Attribut speichert.
+
+Am Ende soll dann folgende Logik möglich sein:
+
+
+```java
+Leaderboard leaderboard = new Leaderboard(notenblaetter);
+
+for (Notenblatt blatt : leaderboard) {
+    System.out.println(blatt);
+}
+```
+**Tipp:** Mit `list.iterator()` erhält man eine Instanz des `Iterator<T>`-Interfaces.
+
+### 5.2
+
+Erstellt eine zweite Klasse `LeaderboardWithArray`. Diese hat im Prinzip die gleiche Funktionalität wie die bisherige `Leaderboard`-Klasse. Der Unterschied ist, dass anstelle einer `List<T>` ein Array verwendet wird.
+
+Was müssen wir nun tun, damit wir trotzdem das `Iterable`-Interface nutzen können?
+
+### 5.3
+
+Erstellen sie eine Klasse `ArrayIterator`, die nun das `Iterator`-Interface implementiert und über das Array rüber iteriert.
+
+Nutzen sie diesen Iterator nun in ihrer `LeaderboardWithArray`-Klasse.
