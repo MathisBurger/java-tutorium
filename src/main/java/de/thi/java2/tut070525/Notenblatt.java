@@ -17,13 +17,13 @@ public class Notenblatt implements Comparable {
             if (this.studiengang.equals("BWL")) {
                 return 1;
             }
-            if (((Notenblatt) o).studiengang.equals("BWL")) {
+            if (((Notenblatt)o).studiengang.equals("BWL")) {
                 return -1;
             }
             float durchschnittThis = this.getDurchschnitt();
             float durchschnittOther = ((Notenblatt)o).getDurchschnitt();
 
-            return (Float.valueOf(durchschnittThis)).compareTo(durchschnittOther);
+            return Float.valueOf(durchschnittThis).compareTo(durchschnittOther);
         }
         return 0;
     }

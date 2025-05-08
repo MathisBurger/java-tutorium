@@ -37,7 +37,7 @@ Wofür ist dieses Interface überhaupt hilfreich?
 
 Jetzt könnt ihr euch zu zweit vergleichen. Nach 5 Minuten ist das aber langweilig geworden. Euer Plan ist es, ein Leaderboard zu bauen.
 
-Implemtiert dazu als erstes die Klasse `Notenvergleicher.java`
+Erstellt dazu als erstes die Klasse `NotenVergleicher.java`
 
 ### 2.2
 
