@@ -4,9 +4,9 @@ import java.util.List;
 
 public class TicketDashboard {
 
-    private List<TicketChecker> ticketCheckers;
+    private List<TicketChecker<Ticket>> ticketCheckers;
 
-    public TicketDashboard(List<TicketChecker> ticketCheckers) {
+    public TicketDashboard(List<TicketChecker<Ticket>> ticketCheckers) {
         this.ticketCheckers = ticketCheckers;
     }
 
@@ -14,9 +14,17 @@ public class TicketDashboard {
         int anzahlTagestickets = 0;
         int anzahlMehrtagestickets = 0;
         int anzahlGesamttickets = 0;
-        for (TicketChecker checker : ticketCheckers) {
-            for (? ticket : checker) {
-                // TODO: Implementieren sie hier
+        for (TicketChecker<Ticket> checker : ticketCheckers) {
+            for (Ticket ticket : checker) {
+                if (ticket instanceof TagesTicket) {
+                    anzahlTagestickets++;
+                }
+                if (ticket instanceof MehrtagesTicket) {
+                    anzahlMehrtagestickets++;
+                }
+                if (ticket instanceof GesamtTicket) {
+                    anzahlGesamttickets++;
+                }
             }
         }
 

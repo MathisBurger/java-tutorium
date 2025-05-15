@@ -1,12 +1,19 @@
 package de.thi.java2.tut150525;
 
-public class MehrtagesTicket {
+public class MehrtagesTicket extends Ticket {
 
     private int startDatum;
 
     private int endDatum;
 
     public MehrtagesTicket(int preis, int ticketNr, int startDatum, int endDatum) {
-        // TODO: Hier dem Rumpf implementieren
+        super(preis, ticketNr);
+        this.startDatum = startDatum;
+        this.endDatum = endDatum;
+    }
+
+    @Override
+    public boolean canCheckIn(long datum) {
+        return datum >= startDatum && datum <= endDatum;
     }
 }

@@ -20,7 +20,7 @@ Laden sie die Klassen mit den vordefinerten Attributen herunter und stellen sie 
 Implementieren sie nun auch die benötigte Logik für die Funktion `canCheckIn(long datum)`.
 
 
-## Aufgabe 2 (15 min)
+## Aufgabe 2 (10 min)
 
 Im nächsten Schritt für das Buchungssystem müssen sie ihre Tickets speichern und prüfen können. 
 Laden sie hierfür ebenfalls die vordefinierte Klasse `TicketChecker` herunter.
@@ -31,7 +31,7 @@ Wählen sie hierfür eine Collection ihrer Wahl. Wichtig ist, dass Tickets nicht
 Implementieren sie nun die Funktion `checkTicket`, sodass zuerst geprüft wird, ob ein Ticket vorhanden ist. Und wenn es vorhanden ist, nutzen sie die im Ticket implementierte Funktion `canCheckIn` um zu überprüfen, ob das Ticket für den CheckIn genutzt werden kann.
 
 
-## Aufgabe 3 (10 min)
+## Aufgabe 3 (15 min)
 
 Die Administratoren hätten noch gerne eine dedizierte Ansicht, in der sie sehen können, wie viele Tickets an welcher Kasse hinterlegt sind. 
 Laden sie dafür auch zuerst die vordefinierte Klasse `TicketDashboard` herunter.
@@ -47,5 +47,3 @@ Seine Idee ist nun also mehrere Kassen zu bauen. Eine Kasse für jeden Tickettyp
 die Logik mit Hilfe von Generics spezifisch für die verschiedenen Ticketarten definieren. 
 
 Parametrisieren sie die `TicketChecker`-Klasse nun also mit ihrem eigenen generischen Datentypen. Wichtig dabei ist, dass nur Klassen erlaubt sind, die von der `Ticket`-Klasse erben.
-
-Im nächsten Schritt kann dann auch die Logik des `TicketDashboard`s deutlich effizienter und einfacher gestaltet werden. Überlegen sie sich, wie dies möglich ist und implementieren sie es.
