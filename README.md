@@ -2,6 +2,11 @@
 
 Hier findet ihr alle Übungen und Dateien aus dem Tutorium.
 
+### 22.05.2025
+
+- [Übungen](src/main/java/de/thi/java2/tut220525/Übungen.md)
+- [Dateien](src/main/java/de/thi/java2/tut220525)
+
 ### 15.05.2025
 
 - [Übungen](src/main/java/de/thi/java2/tut150525/Übungen.md)
