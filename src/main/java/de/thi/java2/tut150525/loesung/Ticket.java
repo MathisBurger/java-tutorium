@@ -1,6 +1,6 @@
-package de.thi.java2.tut150525;
+package de.thi.java2.tut150525.loesung;
 
-public class Ticket {
+public abstract class Ticket {
 
     protected int preis;
 
@@ -10,4 +10,6 @@ public class Ticket {
         this.preis = preis;
         this.ticketNr = ticketNr;
     }
+
+     public abstract boolean canCheckIn(long datum);
 }

@@ -1,25 +1,17 @@
 package de.thi.java2.tut150525;
 
-import java.util.Iterator;
-import java.util.Set;
+import java.util.HashSet;
 
-public class TicketChecker<T extends Ticket> implements Iterable<T> {
+public class TicketChecker {
 
-    private Set<T> tickets;
+    private ? tickets;
 
-    public TicketChecker(Set<T> tickets) {
+    public TicketChecker(? tickets) {
         this.tickets = tickets;
     }
 
-    public boolean checkTicket(T ticket, long datum) {
-        if (tickets.contains(ticket)) {
-            return ticket.canCheckIn(datum);
-        }
-        return false;
-    }
-
-    public Iterator<T> iterator() {
-        return this.tickets.iterator();
+    public boolean checkTicket(? ticket, long datum) {
+        // TODO: Implementieren sie hier die Logik
     }
 
 }
